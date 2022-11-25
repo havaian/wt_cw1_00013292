@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <div class="menu-icon">
@@ -25,7 +26,48 @@
             </ul>
         </div>
     </div>
-    <div class="footer">
+    <div class="schedule">
+        <table class="schedule-table">
+            <thead>
+                <th>Day</th>
+                <th>Activity</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="schedule-day">Monday</td>
+                    <td class="schedule-activity">No data</td>
+                </tr>
+                <tr>
+                    <td class="schedule-day">Tuesday</td>
+                    <td class="schedule-activity">No data</td>
+                </tr>
+                <tr>
+                    <td class="schedule-day">Wednesday</td>
+                    <td class="schedule-activity">No data</td>
+                </tr>
+                <tr>
+                    <td class="schedule-day">Thursday</td>
+                    <td class="schedule-activity">No data</td>
+                </tr>
+                <tr>
+                    <td class="schedule-day">Friday</td>
+                    <td class="schedule-activity">No data</td>
+                </tr>
+                <tr>
+                    <td class="schedule-day">Saturday</td>
+                    <td class="schedule-activity">No data</td>
+                </tr>
+                <tr>
+                    <td class="schedule-day">Sunday</td>
+                    <td class="schedule-activity">No data</td>
+                </tr>
+            </tbody>
+        </table>
+        <button id="schedule-button" onclick="getSchedule()">
+            Get latest schedule
+        </button>
+    </div>
+    <div class="footer" id="schedule-footer">
         <p>
             This website was created to fulfill Web Technology module’s requirements and does not represent an actual company or service
         </p>

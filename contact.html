@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <div class="menu-icon">
@@ -26,20 +27,23 @@
         </div>
     </div>
     <div class="contact-form">
-        <form class="form">
-            <div class="form__header">
-              <h1 class="h1">Contact Form</h1>
-            </div>
-            <div class="form__linput">
-              <label class="form__label" for="name">Name</label>
-              <input class="form__input" type="text" id="name" name="name" required/>
-            </div>
-            <div class="form__linput">
-              <label class="form__label" for="subject">Subject</label>
-              <input class="form__input" type="text" id="subject" name="subject" required/>
-            </div>
-            <button id="send-email-button">Send email</button>
-        </form>
+        <div class="form-container">
+            <form class="form">
+                <div class="form__header">
+                  <h1 class="h1">Contact Form</h1>
+                </div>
+                <div class="form__linput">
+                  <label class="form__label" for="name">Name</label>
+                  <input class="form__input" type="text" id="name" name="name" required/>
+                </div>
+                <div class="form__linput">
+                  <label class="form__label" for="subject">Subject</label>
+                  <input class="form__input" type="text" id="subject" name="subject" required/>
+                </div>
+            </form>
+            <p onclick="callWiut()">+998 71 238 74 00<span>></span></p>
+            <button onclick="sendEmail()">Send email</button>
+        </div>
     </div>
     <div class="footer">
         <p>
@@ -48,4 +52,15 @@
     </div>
 </body>
 <script src="./main.js"></script>
+<script>
+    const sendEmail = () => {
+        const name = document.querySelector('input[name="name"]');
+        const subject = document.querySelector('input[name="subject"]');
+
+        window.location = `mailto:example@mail.com?subject=${name} - ${subject}`;
+    }
+    const callWiut = () => {
+        window.open("tel:+998712387400");
+    }
+</script>
 </html>
