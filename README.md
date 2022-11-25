@@ -3,7 +3,8 @@ This repository contains Coursework 1 files for a Web Technology module’s assi
 
 # CSF. CW1. 00013287 & 00013292
 
-If you would want to visit the website - here is the [link](https://timely-pithivier-221210.netlify.app) to its deployed version.
+[Link](https://timely-pithivier-221210.netlify.app) to a deployed version of the website.
+[Link](https://timely-pithivier-221210.netlify.app) to a github repository of the website.
 
 ## Python Snake Game
 
